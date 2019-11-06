@@ -1,5 +1,10 @@
-#keyword argument
-def adder(good = 1, bad = 2, ugly = 3):
-	return(good+bad+ugly)
+# generalise for urbitrary number of arguments
 
-print(adder(ugly = 1, good = 5)) #The result will be 5+2+1 = 8
+def adder(**kwargs):
+	L = list(kwargs.values())
+	sum = 0
+	for i in L:
+		sum+=i
+	return(sum)
+
+print(adder(day = 24, jan = 6, sec= 1, gd= 4))
