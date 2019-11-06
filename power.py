@@ -1,7 +1,7 @@
-#while-else construction
-i=0
+#for-else construction
+print('for-else construction')
 
-while i < len(L):
+for i in range(len(L)):
 	if 2**X == L[i]:
 		print('at index', i)
 		break
