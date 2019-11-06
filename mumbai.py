@@ -1,6 +1,7 @@
-#Sum of unicode
-sum = 0
-for i in S:
-	sum+=ord(i)
+#Code to return a list containing the Unicode code points of the characters in S
 
-print("Sum of these Unicode points of the characters is = ", sum)
+#by list methods
+L = []
+for i in S:
+	L.append(ord(i))
+print(L)
