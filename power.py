@@ -1,11 +1,8 @@
-#for-else construction
-print('for-else construction')
-
-for i in range(len(L)):
-	if 2**X == L[i]:
-		print('at index', i)
+#list index method
+print('list index method')
+for num in L:
+	if 2**X == num:
+		print('at index',L.index(num))
 		break
-	else:
-		i = i+1
 else:
 	print(X, 'not found')
