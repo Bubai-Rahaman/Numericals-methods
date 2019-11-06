@@ -1,6 +1,9 @@
-#100 fibonacci number
+#time
+import timeit
+
+mycode = '''
 import module_fib
+module_fib.fib(100)
+'''
 
-N = int(input("Enter number of fibonacci number: ") )
-
-module_fib.fib(N)
+print("Time required to print 100 fibonacci numbers is =", (timeit.timeit(stmt = mycode,number = 100))/100,"sec")
