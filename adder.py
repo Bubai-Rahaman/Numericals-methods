@@ -1,8 +1,5 @@
-#generalise adder function
-def gen_adder(*argv):
-	sum = 0
-	for arg in argv:
-		sum+=arg
-	return(sum)
+#keyword argument
+def adder(good = 1, bad = 2, ugly = 3):
+	return(good+bad+ugly)
 
-print(gen_adder(1,2,3,4,5))
+print(adder(ugly = 1, good = 5)) #The result will be 5+2+1 = 8
