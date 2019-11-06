@@ -1,7 +1,3 @@
-#Code to return a list containing the Unicode code points of the characters in S
-
-#by list methods
-L = []
-for i in S:
-	L.append(ord(i))
-print(L)
+#by list comprehension methods
+L1 = [ord(j) for j in S]
+print(L1)
