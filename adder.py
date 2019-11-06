@@ -1,8 +1,8 @@
-def adder(x,y):
-	return(x+y)
+#generalise adder function
+def gen_adder(*argv):
+	sum = 0
+	for arg in argv:
+		sum+=arg
+	return(sum)
 
-#addition of two floating points
-
-F1 = 10.23
-F2 = 11.4
-print(adder(F1,F2)) #we need  print statement
+print(gen_adder(1,2,3,4,5))
