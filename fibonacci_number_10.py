@@ -1,13 +1,22 @@
-#First ten Fibonacci numbers
-a = 0
-b = 1
+#module
+def fib(n):
 
-print(a)
+	if n<0:
+		print("Please enter a postive integer...")
+	
+	elif n==0:
+		print(0)
 
-for i in range(9):
-	c = a+b
-	print(c)
-	a=b	
-	b=c
-		
+	elif n>0:
+		a = 0
+		b = 1
+
+		print(a)
+
+		for i in range(n-1):
+			c = a+b
+			print(c)
+			a=b
+			b=c	
+	return
 
