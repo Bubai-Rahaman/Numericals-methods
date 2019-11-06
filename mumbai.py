@@ -1,6 +1,6 @@
-S = 'mumbai'
-
- 
-#printing each charecter in mumbai and it's unicode 
+#Sum of unicode
+sum = 0
 for i in S:
-	print("Character = ", i, ", Unicode = ", ord(i))
+	sum+=ord(i)
+
+print("Sum of these Unicode points of the characters is = ", sum)
