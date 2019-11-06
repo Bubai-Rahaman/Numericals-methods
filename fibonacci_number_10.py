@@ -1,9 +1,6 @@
-#time
-import timeit
+#lambda function
 
-mycode = '''
-import module_fib
-module_fib.fib(100)
-'''
+from functools import reduce
 
-print("Time required to print 100 fibonacci numbers is =", (timeit.timeit(stmt = mycode,number = 100))/100,"sec")
+fib = lambda n: reduce(lambda x,_: x +[x[-1]+x[-2]],range(n-2), [0,1])
+print(fib(10))
