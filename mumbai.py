@@ -1,3 +1,3 @@
-#by list comprehension methods
-L1 = [ord(j) for j in S]
-print(L1)
+#By map class
+
+print(list(map(ord,S)))
